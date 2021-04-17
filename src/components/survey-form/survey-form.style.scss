@@ -1,0 +1,95 @@
+.survey-form {
+  width: 40%;
+  height: 30rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+      height: 2rem;
+      margin-bottom: 1.4rem;
+      margin-top: 0.3rem;
+      font-family: 'Antonio', sans-serif;
+      font-size: 0.95rem;
+      color: rgba(0, 0, 0, 0.9);
+      border: none;
+      border-bottom: 1px solid #1e272e;
+      outline: none;
+
+      &:focus {
+        border-bottom: 2.2px solid #2ecc71;
+      }
+    }
+
+    textarea {
+      margin-top: 20px;
+      margin-bottom: 3rem;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 0.85rem;
+    }
+
+    label {
+      transform: translateY(5px);
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    small {
+      color: red;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &_buttons {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  &_button,
+  a {
+    width: 6rem;
+    height: 2.4rem;
+    background: #7f8c8d;
+    color: #ecf0f1;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: #e84118;
+    &:hover {
+      background-color: #c23616;
+    }
+  }
+
+  &_button-active {
+    color: white;
+    background-color: #273c75;
+
+    &:hover {
+      background-color: #192a56;
+    }
+  }
+
+  .survey-form_error {
+    border-bottom: 1.59px solid red;
+  }
+
+  @media (max-width: 900px) {
+    width: 70%;
+  }
+
+  @media (min-width: 900px) and (max-width: 1200px) {
+    width: 50%;
+  }
+}
